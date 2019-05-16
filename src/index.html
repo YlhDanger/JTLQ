@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>街头篮球周边商城</title>
+    <link rel="stylesheet" href="/libs/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    
+</head>
+<body>
+    <!--放置头部的容器-->
+    <header id="header-container"></header>
+    <!--content主题内容-->
+    <div class="content">
+        <!--主页导航内容-->
+        <div class="content-nav" id="con-nav">
+            <ul class="nav-ul">
+                <li><a href="/html/list.html" target="_blank">所有商品</a></li>
+                <li><a href="/html/list.html" target="_blank">周边服饰</a></li>
+                <li><a href="/html/list.html" target="_blank">毛绒玩具</a></li>
+                <li><a href="/html/list.html" target="_blank">游戏生活</a></li>
+                <li><a href="/html/list.html" target="_blank">促销商品</a></li>
+            </ul>
+            <input type="text" placeholder="篮球" id="search-input"/>
+            <ul id="search-list"></ul>
+            <a href="javascript:;" class="search">搜索</a>
+        </div>
+        <!--swiper轮播图-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/images/index_zb1.jpg"/></div>
+                <div class="swiper-slide"><img src="/images/index_zb2.jpg"/></div>
+                <div class="swiper-slide"><img src="/images/index_zb3.jpg"/></div>
+                <div class="swiper-slide"><img src="/images/index_zb4.jpg"/></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!--shoplist首页商品列表-->
+        <div class="shopList">
+            <ul id="list-ul">
+                <script type="text/html" id="list-index">
+                    {{each list item}}
+                        <li data-id={{item.id}}>
+                            <a href="/html/detail.html"><img src={{item.images}}></a>
+                            <p>
+                                {{item.title}}<br/>
+                                <span>￥{{item.price}}</span>
+                            </p>
+                        </li>                   
+                    {{/each}}
+                
+                </script>
+                <!-- <li>
+                    <a href="javascript:;"><img src="/images/index_zb7.jpg"></a>
+                    <p>
+                        阿五<br/>
+                        <span>￥98</span>
+                    </p>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/images/index_zb7.jpg"></a>
+                    <p>
+                         阿五<br/>
+                         <span>￥98</span>
+                    </p>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/images/index_zb7.jpg"></a>
+                    <p>
+                        阿五<br/>
+                        <span>￥98</span>
+                    </p>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/images/index_zb7.jpg"></a>
+                     <p>
+                        阿五<br/>
+                        <span>￥98</span>
+                     </p>
+                </li>     -->
+
+            </ul>
+        </div>
+        
+    </div>
+    <!--放置尾部的容器-->
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/index"></script>
+</body>
+</html>

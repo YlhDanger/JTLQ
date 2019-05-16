@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>街头篮球周边商城</title>
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+    <!--头部容器-->
+    <header id="header-container"></header>
+    <!--详情页内容-->
+    <div class="detailContent">
+            <div class="contentTitle">
+                <h2>产品分类</h2>
+            </div>
+            <p class="mainNav">
+                <a href="/index.html">首页</a>&gt;
+                <a href="/html/list.html">周边服饰</a>&gt;战神归来卫衣
+            </p>
+            <div class="detailMain" id="detail"></div>
+            <script type="text/html" id="detail_template">
+            
+            <div class="picture">
+                    
+                    <div class="view_bd">
+                        <img class="zoom-img" src="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}"/>
+                    </div>
+                    <div class="view_thumbs" id="gal1">
+                        <ul class="view-ul">
+                            <li class="current">
+                                <a href="#" data-image="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}">
+                                    <img class="s" src="{{data.imgs[0]}}" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs[1]}}" data-zoom-image="{{data.imgs[1]}}">
+                                <img class="s" src="{{data.imgs[1]}}" /></a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs[2]}}" data-zoom-image="{{data.imgs[2]}}">
+                                <img class="s" src="{{data.imgs[2]}}" /></a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs[3]}}" data-zoom-image="{{data.imgs[3]}}">
+                                <img class="s" src="{{data.imgs[3]}}" /></a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs[4]}}" data-zoom-image="{{data.imgs[4]}}">
+                                <img class="s" src="{{data.imgs[4]}}" /></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="detailMain_right">
+                    <h3>{{data.title}}</h3>
+                    <span class="collection"></span>
+                    <p class="p1">新品正式发售</p>
+                    <p class="price">￥ ：{{data.price}}</p>
+                    <div class="freight_wrap">
+                        <span class="s1">运费 :</span>
+                        <span class="s2">上海 至 上海-上海-黄浦区</span>
+                        <a href="javascript:;"></a>
+                        <span class="s3">快递：10元</span>
+                    </div>
+                    <div class="model" id="model">
+                        <b>型号：</b>
+                        <span class="change_color">M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                     </div>
+                     <div class="color" id="color_style">
+                        <p>颜色 :</p>
+                        <span class="change_color">黄色</span>
+                        <span>红色</span>
+                        <span>绿色</span>
+                        <span>蓝色</span>
+                     </div>
+                     <div class="quantity_wrap">
+                            <span class="big">购买数量：</span>
+                            <a class="count_minus" href="javascript:;">-</a>
+                            <p>
+                                <input type="text" value="1"/>
+                            </p>
+                            <a class="count_plus" href="javascript:;">+</a>
+                            <span id="count">（剩余库存<b>15</b>件）</span>
+                      </div>
+                      <div class="shopping_btn" id="buy">
+                            <a class="common_link1" id="edit" href="javascript:;">立刻购买</a>
+                            <a class="common_link2" id="shopcart" href="javascript:;">放入购物车</a>   
+                    </div>
+
+                
+                </div>
+
+            
+            
+            </script>
+            
+    </div>
+    <!--footer容器-->
+    <footer id="footer-container"></footer>
+
+    <script src="/libs/requirejs/require.js" data-main="/js/detail"></script>
+</body>
+</html>

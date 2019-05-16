@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>请注册</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+     <div class="reg-content">
+        <div class="header">
+            <ul>
+                <a href="javascript:;"></a>
+                <li>首页</li>
+                <li>会员中心</li>
+                <li>充值中心</li>
+                <li>客服中心</li>
+                <li>游乐场</li>
+                <li>天游商城</li>
+                <li>更多游戏</li>
+            </ul>
+        </div>
+        <div class="reg-nav">
+            <ul>
+                <li>自定义注册</li>
+                <li>手机注册</li>
+            </ul>
+        </div>
+        <form>
+             通行证账号 :  <input type="text" id="username" placeholder="请输入通行证账号">
+            <br/> &nbsp;&nbsp; 登陆密码 : <input type="password" id="password" placeholder="请输入密码">
+            <br/> &nbsp;&nbsp; 重复密码 : <input type="password" id="repeat-password" placeholder="请再次输入密码" />
+                <div class="checkbox-wrap">
+                        <input type="checkbox" class="checkbox" id="checkbox" checked="checked"/>
+                        <p>我已经阅读并同意最终用户协议</p>
+                </div>
+                <div id="submit" class="promptly-register">立即注册</div>
+        </form>
+
+     </div>
+
+    <!--footer容器-->
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/register"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>街头篮球周边商城</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <!--header容器-->
+    <header id="header-container"></header>
+    <div class="maincontent">
+        <div class="contentTitle">
+            <h2>产品分类</h2>
+        </div>
+        <div class="min-nav">
+            <a href="/index.html">首页</a>
+             >购物车
+        </div>
+    <div class="shopCart" >
+        <ul class="cartNav">
+            <li>产品</li>
+            <li>数量</li>
+            <li>单价</li>
+            <li>小计</li>
+            <li>操作</li>
+        </ul>
+        <div id="listCart"></div>
+        <script type="text/html" id="cart-template">
+            {{each cart item}}
+            <ul class="cartList" data-id={{item.id}}>
+                    <li class="cartDetail">
+                        <a href="javascript:;">
+                         <img src="{{item.imgs[0]}}" />
+                         </a>
+                         <div class="name">
+                             <h3>{{item.title}}</h3>
+                             <p>规格 : M 颜色 : 黄色</p>
+                         </div>
+                     </li>
+                     <li class="number">
+                         <div class="quantity_wrap">
+                                 <a class="count_minus" href="javascript:;">-</a>
+                                 <p>
+                                     <input class="item-num" type="text" value="{{item.num}}"/>
+                                 </p>
+                                 <a class="count_plus" href="javascript:;">+</a>
+                             </div>    
+                     </li>
+                     <li class="price">￥ : {{item.price}}</li>
+                     <li class="Subtotal">{{item.price*item.num}}</li>
+                     <li class="delete">删除</li>
+         
+                 </ul>
+        
+            {{/each}}
+        </script>
+        
+        <ul class="goShop">
+            <li><a href="/html/list.html">继续购物</a></li>
+        </ul>
+        <div class="totalList" id="listTotal">
+                <p>全场满199元包邮</p>
+                <p id="total1">原价:597元</p>
+                <p>优惠：0.00元</p>
+            总计：<span class="total" id="total2">597.0元</span></li>
+            <a href="javascript:;">结算</a>
+        </div>
+    
+
+    </div>
+
+    </div>
+    <!--footer容器-->
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/cart"></script>
+</body>
+</html>

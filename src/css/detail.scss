@@ -1,0 +1,283 @@
+@import"module/header.scss";
+@import"module/footer.scss";
+
+.detailContent{
+    width: 980px;
+    min-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    .contentTitle{
+        width: 100%;
+        height: 40px;
+        border-bottom: 3px solid #ff9000;
+        margin-top:30px;
+        margin-bottom: 30px;
+        h2{
+            background: #ff9000;
+            font-size: 18px;
+            font-weight: normal;
+            color: white;
+            padding-left: 20px;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .mainNav{
+        height: 40px;
+        line-height: 40px;
+        color: #999;
+        font-size: 14px;
+        color: black;
+        a{
+            color: black;
+        }
+    }
+    .detailMain{
+        border: 1px solid #ccc;
+        height: 560px;
+        padding: 40px 40px 0;
+        .picture{
+            width:400px;
+            height: 520px;
+            float: left;
+            .view_bd{
+                width: 400px;
+                height: 400px;
+                margin-bottom: 40px;
+                img{
+                    width: 400px;
+                    height: 400px;
+
+                }
+            }
+            .view_thumbs{
+                width: 400px;
+                height: 80px;
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content:space-around;
+                    li{
+                        width:79px;
+                        height: 80px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .detailMain_right{
+            width: 450px;
+            height: 468px;
+            float: left;
+            margin-left: 45px;
+            position: relative;
+            h3{
+                font-size: 36px;
+                font-weight: normal;
+                color: #333;
+                line-height: 45px;
+            }
+            .collection{
+                position: absolute;
+                width:22px;
+                height: 17px;
+                top:15px;
+                right:15px;
+                background:url(/images/icon.png) -119px -46px;
+            }
+            .p1{
+                font-size: 18px;
+                color: #999;
+                line-height: 35px;
+            }
+            .price{
+                font-size: 18px;
+                color: #ff0000;
+                line-height: 45px;
+                margin-bottom: 15px;
+            }
+            .freight_wrap{
+                border-top: 1px solid #efefef;
+                padding-top: 20px;
+                height: 30px;
+                position: relative;
+                span{
+                    display: block;
+                    line-height: 30px;
+                    height: 30px;
+                    color: #999;
+                    margin: 0 5px;
+                    float: left;
+                }
+                .s1{
+                    font-size: 18px;
+                    color: #333;
+                }
+                a{
+                    width: 15px;
+                    height: 9px;
+                    background: url(/images/icon.png) -75px -54px no-repeat;
+                    cursor: pointer;
+                    display: block;
+                    line-height: 30px;
+                    color: #999;
+                    margin: 0 5px;
+                    float: left;
+                    margin-top: 10px;
+                }
+
+            }
+            .model{
+                height: 30px;
+                color: #999;
+                position: relative;
+                margin-top: 15px;
+                margin-bottom: 25px;
+                clear: both;
+                line-height: 30px;
+                b{
+                    font-size: 18px;
+                    color: #333;
+                    font-weight: normal;
+                    margin: 0 5px;
+                }
+                span{
+                    display: inline-block;
+                    height: 30px;
+                    padding: 0 15px;
+                    text-align: center;
+                    font-size: 14px;
+                    vertical-align: top;
+                    border: 1px solid #999;
+                    line-height: 30px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+                .change_color{
+                    color:#ff9000;
+                    border:1px solid #ff9000;
+                }
+            }
+            .color{
+                height: 30px;
+                color: #999;
+                position: relative;
+                margin-top: 15px;
+                margin-bottom: 25px;
+                clear: both;
+                line-height: 30px;
+                p{
+                    font-size: 18px;
+                    color: #333;
+                    font-weight: normal;
+                    margin: 0 5px;
+                    float: left;
+                }
+                span{
+                    display: inline-block;
+                    height: 30px;
+                    padding: 0 15px;
+                    text-align: center;
+                    font-size: 14px;
+                    vertical-align: top;
+                    border: 1px solid #999;
+                    line-height: 30px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+                .change_color{
+                    color:#ff9000;
+                    border:1px solid #ff9000;
+                }
+            }
+            .quantity_wrap {
+                clear: both;
+                height: 30px;
+                color: #999;
+                position: relative;
+                margin-top: 15px;
+                margin-bottom: 25px;
+                span, a {
+                    display: block;
+                    height: 30px;
+                    line-height: 30px;
+                    margin: 0 5px;
+                    float: left;
+                }
+                .big{
+                    font-size: 18px;
+                    color: #333;
+                    float: left;
+                }
+                a{
+                    width: 18px;
+                    height: 28px;
+                    border: 1px solid #efefef;
+                    margin: 0;
+                    text-align: center;
+                    line-height: 28px;
+                    color: #ccc;
+                }
+                a:hover{
+                    color: #ff9000;
+                    border: 1px solid #ff9000;
+                }
+               p{ 
+                    width: 62px;
+                    height: 28px;
+                    border: 1px solid #999;
+                    float: left;
+                    input{
+                        width: 62px;
+                        height: 28px;
+                        border: none;
+                        background: none;
+                        text-align: center;
+                        line-height: 28px;
+                        color: #999;
+                    }
+                }
+            }
+            .shopping_btn {
+                border-top: 1px solid #efefef;
+                padding-top: 33px;
+                .common_link1 {
+                    display: block;
+                    width: 220px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    background: #ff9000;
+                    color: white;
+                    font-size: 24px;
+                    float: left;
+                }
+                .common_link2 {
+                    display: block;
+                    background: #efefef;
+                    width: 218px;
+                    height: 58px;
+                    border: 1px solid #ccc;
+                    color: #999;
+                    line-height: 58px;
+                    text-align: center;
+                    font-size: 24px;
+                    float: right;
+                }
+                a:hover{
+                    background: #f46a2e;
+                }
+            }    
+
+
+
+
+        }
+
+    }
+}
