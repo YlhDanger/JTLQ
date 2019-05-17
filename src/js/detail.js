@@ -95,7 +95,7 @@ require(['require.config'],()=>{
                 //重新存localStorage
                 localStorage.setItem('cart',JSON.stringify(cart));
                 
-
+                alert("添加购物车成功")
 
               })
             }
